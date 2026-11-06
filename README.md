@@ -15,6 +15,13 @@ React & component-driven development, AI-assisted design and development
 - 📘 **Holibook → Figma** — moving a local HTML design book (website + mobile app) into an editable, maintainable Figma file
 - 🧪 Small experiments where design meets code
 
+## Learning journey
+
+- 🎓 Taking the **UX Hero** course — learning to ship designs as real code, not just mockups
+- 🤖 Pairing with Claude Code daily to turn Figma ideas into HTML/CSS and React components
+- 🌱 Building in public: small commits, honest mistakes, steady progress
+- 📚 Fun fact: my first `git push` took three tries and one very long sigh
+
 ## Connect
 
 [LinkedIn](https://www.linkedin.com/in/iryna-kyrylenko/)
