@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- 1. DOCTYPE говорит браузеру: «это современный HTML» -->
+
+<html lang="ru">
+<!-- 2. <html> — корень всей страницы. lang="ru" — язык страницы -->
+
+  <head>
+    <!-- 3. <head> — служебная информация. На странице она НЕ видна -->
+
+    <meta charset="UTF-8" />
+    <!-- Кодировка, чтобы русские буквы и эмодзи отображались правильно -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Чтобы страница нормально выглядела на телефоне -->
+
+    <title>Моя первая страница</title>
+    <!-- Текст на вкладке браузера -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Подключаем Tailwind CSS. После этого можно писать стили
+         прямо в атрибуте class, например class="text-blue-600" -->
+  </head>
+
+  <body class="min-h-screen bg-slate-100 flex items-center justify-center p-4">
+    <!-- 4. <body> — всё, что ВИДНО на странице.
+         Классы Tailwind здесь значат:
+         min-h-screen   — высота не меньше экрана
+         bg-slate-100   — светло-серый фон
+         flex items-center justify-center — ставим содержимое по центру
+         p-4            — внутренний отступ (padding) со всех сторон -->
+
+    <!-- ===== КАРТОЧКА ===== -->
+    <div class="max-w-sm w-full bg-white rounded-2xl shadow-lg p-6">
+      <!-- max-w-sm   — карточка не шире «small» (≈384px)
+           w-full     — но на узком экране занимает всю ширину
+           bg-white   — белый фон
+           rounded-2xl — скруглённые углы
+           shadow-lg  — тень
+           p-6        — внутренний отступ побольше -->
+
+      <!-- Кружок-аватар с эмодзи -->
+      <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center text-3xl">
+        👩‍🎨
+      </div>
+
+      <!-- Заголовок -->
+      <h1 class="mt-4 text-2xl font-bold text-slate-900">
+        Iryna Kyrylenko
+      </h1>
+      <!-- mt-4 — отступ сверху, text-2xl — крупный текст, font-bold — жирный -->
+
+      <!-- Подзаголовок -->
+      <p class="text-indigo-600 font-medium">
+        Product Designer · Design Engineer in progress
+      </p>
+
+      <!-- Обычный текст -->
+      <p class="mt-3 text-slate-600">
+        I'm learning design engineering — the craft at the intersection of design and development.
+        I'm learning not only to design interfaces but to build them myself:
+        HTML, CSS, components and live prototypes.
+      </p>
+
+      <!-- Теги (маленькие «таблетки») -->
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-700">HTML</span>
+        <span class="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-700">CSS</span>
+        <span class="px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-700">Tailwind</span>
+      </div>
+      <!-- flex flex-wrap — ставим в ряд и переносим, если не помещаются
+           gap-2 — расстояние между тегами -->
+
+      <!-- Кнопка-ссылка -->
+      <a
+        href="https://www.linkedin.com/in/iryna-kyrylenko/"
+        class="mt-6 block text-center rounded-lg bg-indigo-600 px-4 py-2 font-semibold text-white hover:bg-indigo-700"
+      >
+        Message me on LinkedIn
+      </a>
+      <!-- hover:bg-indigo-700 — цвет темнеет при наведении мышки -->
+    </div>
+    <!-- ===== КОНЕЦ КАРТОЧКИ ===== -->
+
+  </body>
+</html>
